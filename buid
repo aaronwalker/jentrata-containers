@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Building Containers"
+docker build -t jentrata/maven jentrata-maven/
+docker build -t jentrata/m2-repo jentrata-m2-repo/
