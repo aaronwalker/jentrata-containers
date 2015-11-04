@@ -1,0 +1,2 @@
+# add any maven custom jars you want added to your repo
+# needs to be in valid maven repo format

@@ -13,7 +13,7 @@ RUN curl http://apache.uberglobalmirror.com/maven/maven-3/$MAVEN_VERSION/binarie
 
 ADD maven.sh /etc/profile.d/maven.sh
 
-RUN adduser -h /var/maven -u 1000 -D -s /bin/bash maven && mkdir -p /var/maven/.m2 && chown -R maven:maven /var/maven/
+RUN adduser -h /var/maven -u 1000 -D -s /bin/bash maven && mkdir -p /var/maven/.m2/repository && chown -R maven:maven /var/maven/
 
 USER maven
 
